@@ -1,5 +1,5 @@
 {
-  "name": "amoha-saas",
+  "name": "amoha",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,31 +10,35 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@hookform/error-message": "^2.0.1",
-    "@tanstack/react-query": "^5.63.0",
-    "@tanstack/react-query-devtools": "^5.64.0",
-    "axios": "^1.7.7",
-    "framer-motion": "^11.11.17",
+    "@emailjs/browser": "^3.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.5.0",
+    "@fortawesome/free-solid-svg-icons": "^6.5.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/material": "^5.15.10",
+    "autoplay": "^0.0.4",
+    "framer-motion": "^10.6.8",
+    "loop": "^3.3.6",
+    "navigation": "^6.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet-async": "^2.0.5",
-    "react-hook-form": "^7.53.2",
-    "react-icons": "^5.4.0",
-    "react-router-dom": "^6.23.1",
+    "react-fast-marquee": "^1.6.4",
+    "react-helmet-async": "^2.0.4",
+    "react-router-dom": "^6.22.0",
     "react-scroll": "^1.9.0",
-    "react-toastify": "^11.0.2"
+    "swiper": "^11.0.4",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.19",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.3",
-    "vite": "^5.4.8"
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "vite": "^7.1.5"
   }
 }
