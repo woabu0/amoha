@@ -1,40 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBuilding } from "@fortawesome/free-solid-svg-icons";
 
 export const Contact = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_7tgyrxh",
-        "template_9s16rla",
-        form.current,
-        "X2BgLpJsY18HGn10P"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Successfully send");
-          document.getElementById("name").value = "";
-          document.getElementById("profession").value = "";
-          document.getElementById("company").value = "";
-          document.getElementById("email").value = "";
-          document.getElementById("city").value = "";
-          document.getElementById("state").value = "";
-          document.getElementById("country").value = "";
-          document.getElementById("message").value = "";
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
   return (
     <div id="contact" className="w-auto mt-[70px] xl:w-[1000px] m-auto px-9">
       <div>
@@ -86,8 +55,6 @@ export const Contact = () => {
           </motion.div>
 
           <motion.form
-            ref={form}
-            onSubmit={sendEmail}
             initial={{ y: -30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4, ease: "linear", duration: 0.5 }}

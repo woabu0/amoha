@@ -3,40 +3,11 @@ import Do from "./Do";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import Button from "./Button";
-import { Link } from "react-router-dom";
-import { Helmet, HelmetData } from "react-helmet-async";
 
 export const Home = () => {
-  const helmetData = new HelmetData({});
   return (
-    <div id="home" className="mt-9 px-[10px] lg:px-9">
-      <Helmet helmetData={helmetData}>
-        <title>amoha - Home</title>
-        <link rel="canonical" href="https://amoha.ai/" />
-      </Helmet>
-      <div className="m-auto px-5 pt-5 md:pt-11 lg:px-9 xl:px-28 2xl:w-[1366px] bg-[#0049FF] rounded-[40px] py-[100px]">
-        <motion.div
-          className="flex justify-between items-center"
-          initial={{ y: -30 }}
-          whileInView={{ y: 0 }}
-          transition={{ ease: "linear", duration: 0.5 }}
-        >
-          <div>
-            <img
-              src="img/logo.gif"
-              alt="logo"
-              className="w-[79px] h-[29px] lg:w-[144px] lg:h-[54px]"
-            />
-          </div>
-          <div className="text-[8px] flex items-center gap-2 lg:gap-[20px] lg:text-[18px] xl:pr-5 m">
-            <Link
-              to="/scanpage"
-              className="cursor-pointer w-[73px] h-[24px] lg:w-[180px] lg:h-[45px] border-[#FAFAFA] border-[1px] rounded-[8px] flex items-center justify-center hover:bg-[#FAFAFA] hover:text-[#0049FF] transition-all"
-            >
-              Scan
-            </Link>
-          </div>
-        </motion.div>
+    <div id="home" className="">
+      <div id="hero" className="m-auto px-5 lg:px-9 xl:px-28 bg-[#0049FF] rounded-b-[40px] pb-[100px]">
         <div className="flex flex-col justify-between lg:flex-row">
           <motion.div
             className="w-full lg:w-[60%]"
