@@ -8,7 +8,7 @@ function InputField(props) {
         type={props.type}
         name={props.name}
         placeholder={props.placeholder}
-        className="px-3 text-[12px] text-[#777E90] bg-[#F4F5F6] h-[48px] rounded-[8px] focus:outline-none"
+        className="px-3 text-[12px] text-[#777E90] bg-[#F4F5F6] h-[48px] rounded-[8px] focus:outline-hidden"
       />
     </div>
   );

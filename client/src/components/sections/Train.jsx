@@ -2,51 +2,64 @@ import React from "react";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 
+const icons = [
+  {
+    arrow: "img/arrow.svg",
+    alt: "arrow",
+  },
+  {
+    arrow: "img/arrow.svg",
+    alt: "arrow",
+  },
+  {
+    arrow: "img/arrow.svg",
+    alt: "arrow",
+  },
+  {
+    arrow: "img/arrow.svg",
+    alt: "arrow",
+  },
+  {
+    arrow: "img/arrow.svg",
+    alt: "arrow",
+  },
+  {
+    arrow: "img/arrow.svg",
+    alt: "arrow",
+  },
+  {
+    arrow: "img/arrow.svg",
+    alt: "arrow",
+  },
+  {
+    arrow: "img/arrow.svg",
+    alt: "arrow",
+  },
+  {
+    arrow: "img/arrow.svg",
+    alt: "arrow",
+  },
+  {
+    arrow: "img/arrow.svg",
+    alt: "arrow",
+  },
+];
+
 export const Train = () => {
-  const icon = [
-    {
-      arrow: "img/arrow3.svg",
-      alt: "arrow",
-    },
-    {
-      arrow: "img/arrow3.svg",
-      alt: "arrow",
-    },
-    {
-      arrow: "img/arrow3.svg",
-      alt: "arrow",
-    },
-    {
-      arrow: "img/arrow3.svg",
-      alt: "arrow",
-    },
-    {
-      arrow: "img/arrow3.svg",
-      alt: "arrow",
-    },
-    {
-      arrow: "img/arrow3.svg",
-      alt: "arrow",
-    },
-    {
-      arrow: "img/arrow3.svg",
-      alt: "arrow",
-    },
-    {
-      arrow: "img/arrow3.svg",
-      alt: "arrow",
-    },
-    {
-      arrow: "img/arrow3.svg",
-      alt: "arrow",
-    },
-    {
-      arrow: "img/arrow3.svg",
-      alt: "arrow",
-    },
-  ];
   return (
-    <div id="train" className="px-[10px] mt-[50px] lg:px-9 lg:mt-[100px]">
+    <div id="train" className="px-[10px] mt-24 lg:px-9 text-center">
+      <h1 className="mb-5 text-2xl lg:text-4xl font-semibold">
+        AI for Mitigating the <br /> Risk of Ocular Diseases
+      </h1>
+      <p className="text-sm w-3/4 m-auto mt-3">
+        Harnessing the power of artificial intelligence, Amoha.ai's proprietary
+        cloud-based platform is streamlining ocular health. With highly accurate
+        early detection and diagnoses, it grants both patients and providers
+        invaluable time for intervention, preserving vision and preventing
+        severe impairment. By embracing proactive and predictive AI approaches,
+        we're at the forefront of advancing eye care, ensuring a brighter future
+        for all.
+      </p>
       <div className="py-[135px] text-center m-auto bg-[#F3F3F6] rounded-[90px]">
         <motion.div
           initial={{ y: -50, opacity: 0 }}
@@ -64,13 +77,13 @@ export const Train = () => {
           transition={{ ease: "linear", duration: 0.5 }}
         >
           <div className="absolute hidden xl:flex w-full justify-between mt-5">
-            {icon.map((ic) => (
+            {icons.map((ic) => (
               <Marquee direction="right">
                 <img src={ic.arrow} alt={ic.alt} />
               </Marquee>
             ))}
           </div>
-          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%] anek">
+          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%]">
             <img
               src="img/saas1.png"
               alt="saasImg"
@@ -79,11 +92,11 @@ export const Train = () => {
             <p>Data Repository (Fundus Images/Scans)</p>
           </div>
           <img
-            src="img/arrow3.svg"
+            src="img/arrow.svg"
             alt="arrow"
             className="rotate-90 xl:hidden"
           />
-          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%] anek">
+          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%]">
             <img
               src="img/saas2.gif"
               alt="saasImg"
@@ -95,11 +108,11 @@ export const Train = () => {
             </p>
           </div>
           <img
-            src="img/arrow3.svg"
+            src="img/arrow.svg"
             alt="arrow"
             className="rotate-90 xl:hidden"
           />
-          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%] anek">
+          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%]">
             <img
               src="img/saas4.gif"
               alt="saasImg"
@@ -108,11 +121,11 @@ export const Train = () => {
             <p>Image preprocessing</p>
           </div>
           <img
-            src="img/arrow3.svg"
+            src="img/arrow.svg"
             alt="arrow"
             className="rotate-90 xl:hidden"
           />
-          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%] anek">
+          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%]">
             <img
               src="img/saas3.gif"
               alt="saasImg"
@@ -121,11 +134,11 @@ export const Train = () => {
             <p>Feature Extraction such as exudates, haemorrhages, etc.</p>
           </div>
           <img
-            src="img/arrow3.svg"
+            src="img/arrow.svg"
             alt="arrow"
             className="rotate-90 xl:hidden"
           />
-          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%] anek">
+          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%]">
             <img
               src="img/saas5.gif"
               alt="saasImg"
@@ -134,11 +147,11 @@ export const Train = () => {
             <p>UNET With multi output layer</p>
           </div>
           <img
-            src="img/arrow3.svg"
+            src="img/arrow.svg"
             alt="arrow"
             className="rotate-90 xl:hidden"
           />
-          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%] anek">
+          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%]">
             <img
               src="img/saas6.gif"
               alt="saasImg"
@@ -147,11 +160,11 @@ export const Train = () => {
             <p>Model Traning and testing</p>
           </div>
           <img
-            src="img/arrow3.svg"
+            src="img/arrow.svg"
             alt="arrow"
             className="rotate-90 xl:hidden"
           />
-          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%] anek">
+          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%]">
             <img
               src="img/saas7.gif"
               alt="saasImg"
@@ -160,11 +173,11 @@ export const Train = () => {
             <p>Model Deployment</p>
           </div>
           <img
-            src="img/arrow3.svg"
+            src="img/arrow.svg"
             alt="arrow"
             className="rotate-90 xl:hidden"
           />
-          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%] anek">
+          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%]">
             <img
               src="img/saas8.gif"
               alt="saasImg"
@@ -173,11 +186,11 @@ export const Train = () => {
             <p>Retraining and Retesting</p>
           </div>
           <img
-            src="img/arrow3.svg"
+            src="img/arrow.svg"
             alt="arrow"
             className="rotate-90 xl:hidden"
           />
-          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%] anek">
+          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%]">
             <img
               src="img/saas9.gif"
               alt="saasImg"
@@ -186,11 +199,11 @@ export const Train = () => {
             <p>Model inference</p>
           </div>
           <img
-            src="img/arrow3.svg"
+            src="img/arrow.svg"
             alt="arrow"
             className="rotate-90 xl:hidden"
           />
-          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%] anek">
+          <div className="z-10 text-[#101010] text-[15px] flex flex-col items-center gap-[10px] w-[50%] xl:w-[10%]">
             <img
               src="img/saas10.png"
               alt="saasImg"

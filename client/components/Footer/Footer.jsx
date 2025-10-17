@@ -56,14 +56,14 @@ export const Footer = () => {
               ref={form}
               onSubmit={sendEmail}
               autoComplete="off"
-              className="r h-[48px] w-full border-[#fff] border-[2px] rounded-[90px] focus:outline-none text-[14px] text-white flex items-center"
+              className="r h-[48px] w-full border-white border-2 rounded-[90px] focus:outline-hidden text-[14px] text-white flex items-center"
             >
               <input
                 type="email"
                 id="subscriber"
                 name="subscriber"
                 placeholder="Enter your email"
-                className="r bg-[#000] h-full mx-[16px] rounded-[10px] w-full focus:outline-none text-[14px]"
+                className="r bg-black h-full mx-[16px] rounded-[10px] w-full focus:outline-hidden text-[14px]"
               />
               <button
                 type="submit"
@@ -76,7 +76,7 @@ export const Footer = () => {
         </div>
         <div className="mt-[100px] w-full">
           <motion.div
-            className="h-[1px] w-full bg-white m-auto"
+            className="h-px w-full bg-white m-auto"
             initial={{ width: 0 }}
             whileInView={{ width: "100%" }}
             transition={{ delay: 0.3, ease: "linear", duration: 0.8 }}

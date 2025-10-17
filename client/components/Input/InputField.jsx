@@ -9,7 +9,7 @@ function InputField(props) {
         id={props.id}
         name={props.name}
         placeholder={props.placeholder}
-        className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-none"
+        className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-hidden"
       />
     </div>
   );

@@ -31,13 +31,13 @@ export const Home = () => {
           <div className="text-[8px] flex items-center gap-2 lg:gap-[20px] lg:text-[18px] xl:pr-5 m">
             <Link
               to="/loginpage"
-              className="cursor-pointer w-[73px] h-[24px] lg:w-[180px] lg:h-[45px] flex items-center justify-center rounded-[8px] hover:border-[#FAFAFA] hover:border-[1px] transition-all"
+              className="cursor-pointer w-[73px] h-[24px] lg:w-[180px] lg:h-[45px] flex items-center justify-center rounded-[8px] hover:border-[#FAFAFA] hover:border transition-all"
             >
               Login
             </Link>
             <Link
               to="/demopage"
-              className="cursor-pointer w-[73px] h-[24px] lg:w-[180px] lg:h-[45px] border-[#FAFAFA] border-[1px] rounded-[8px] flex items-center justify-center hover:bg-[#FAFAFA] hover:text-[#0049FF] transition-all"
+              className="cursor-pointer w-[73px] h-[24px] lg:w-[180px] lg:h-[45px] border-[#FAFAFA] border rounded-[8px] flex items-center justify-center hover:bg-[#FAFAFA] hover:text-[#0049FF] transition-all"
             >
               Book a Demo
             </Link>
@@ -90,13 +90,13 @@ export const Home = () => {
           </motion.div>
         </div>
       </div>
-      <div className="p-[20px] xl:p-[50px] mt-[-100px] lg:mt-[-50px] xl:mt-[-80px] 2xl:mt-[-100px] mx-11 2xl:w-[1280px] 2xl:m-auto rounded-[22px] lg:p-[60] bg-[#F9FBFF] lg:rounded-[40px] shadow border-[1px]">
+      <div className="p-[20px] xl:p-[50px] mt-[-100px] lg:mt-[-50px] xl:mt-[-80px] 2xl:mt-[-100px] mx-11 2xl:w-[1280px] 2xl:m-auto rounded-[22px] lg:p-[60] bg-[#F9FBFF] lg:rounded-[40px] shadow-sm border">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ ease: "linear", duration: 0.3 }}
         >
-          <h1 className="text-[24px] text-center lg:text-[35px] xl:text-[50px] text-[#000] s">
+          <h1 className="text-[24px] text-center lg:text-[35px] xl:text-[50px] text-black s">
             What we do?
           </h1>
           <p className="text-black text-center mt-2 w-full lg:w-[80%] m-auto text-[14px] lg:text-[16px]">

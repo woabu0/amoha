@@ -1,20 +1,18 @@
 import React from "react";
-import { Navbar } from "../sections/Navbar";
-import { Home as Hero } from "../Home/Home";
-import { Diseases } from "../Diseases/Diseases";
-import { Ai } from "../Ai/Ai";
+import { Hero } from "../sections/Hero";
+import { About } from "../sections/About";
+import { Disease } from "../sections/Disease";
 import { Train } from "../sections/Train";
-import { Feedback } from "../Feedback/Feedback";
+import { Feedback } from "../sections/Feedback";
 import { Footer } from "../sections/Footer";
 import { Contact } from "../sections/Contact";
 
 export const Home = () => {
   return (
     <div>
-      <Navbar />
       <Hero />
-      <Diseases />
-      <Ai />
+      <About />
+      <Disease />
       <Train />
       <Feedback />
       <Contact />

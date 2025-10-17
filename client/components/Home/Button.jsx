@@ -8,7 +8,7 @@ function Button(props) {
       to="contact"
       smooth={true}
       offset={-50}
-      className="r cursor-pointer flex items-center gap-3 justify-center mt-5 w-[172px] h-[36px] text-[13px] lg:w-[286px] lg:h-[60px] lg:text-[22px] bg-[#FFFFFF] text-[#000] rounded-[8px] hover:bg-[#0049FF] hover:text-white transition-all border-[1px] border-[#fff]"
+      className="r cursor-pointer flex items-center gap-3 justify-center mt-5 w-[172px] h-[36px] text-[13px] lg:w-[286px] lg:h-[60px] lg:text-[22px] bg-[#FFFFFF] text-black rounded-[8px] hover:bg-[#0049FF] hover:text-white transition-all border border-white"
     >
       {props.title}{" "}
       <FontAwesomeIcon

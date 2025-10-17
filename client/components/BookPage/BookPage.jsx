@@ -64,7 +64,7 @@ export const BookPage = () => {
             <div className="text-[8px] lg:text-[18px] m">
               <Link
                 to="/loginpage"
-                className="cursor-pointer w-[73px] h-[24px] lg:w-[180px] lg:h-[45px] flex items-center justify-center rounded-[8px] hover:border-[#FAFAFA] hover:border-[1px] transition-all"
+                className="cursor-pointer w-[73px] h-[24px] lg:w-[180px] lg:h-[45px] flex items-center justify-center rounded-[8px] hover:border-[#FAFAFA] hover:border transition-all"
               >
                 Login
               </Link>
@@ -94,7 +94,7 @@ export const BookPage = () => {
                       name="user_name"
                       required
                       placeholder="e.g., John Doe"
-                      className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-none"
+                      className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-hidden"
                     />
                     <label className="text-[#777E90] text-[14px] leading-tight m">
                       Work Email:
@@ -105,7 +105,7 @@ export const BookPage = () => {
                       name="user_email"
                       required
                       placeholder="e.g., john.doe@example.com"
-                      className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-none"
+                      className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-hidden"
                     />
                     <InputField
                       types="text"
@@ -126,7 +126,7 @@ export const BookPage = () => {
                       name="user_profession"
                       required
                       placeholder="e.g., Ophthalmologist"
-                      className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-none"
+                      className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-hidden"
                     />
                     <label className="text-[#777E90] text-[14px] leading-tight m">
                       Title:
@@ -137,7 +137,7 @@ export const BookPage = () => {
                       name="user_title"
                       required
                       placeholder="e.g., MD, PhD"
-                      className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-none"
+                      className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-hidden"
                     />
                     <label className="text-[#777E90] text-[14px] leading-tight m">
                       Organization/Company:
@@ -148,7 +148,7 @@ export const BookPage = () => {
                       name="user_company"
                       required
                       placeholder="e.g., ABC Eye Clinic"
-                      className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-none"
+                      className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-hidden"
                     />
                   </div>
                   <div className="w-full md:w-[30%]">
@@ -162,7 +162,7 @@ export const BookPage = () => {
                       name="user_practice"
                       required
                       placeholder="e.g., 10"
-                      className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-none r"
+                      className="w-full h-[48px] xl:h-[40px] 2xl:h-[48px] bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-hidden r"
                     />
                     <InputField
                       types="text"
@@ -266,7 +266,7 @@ export const BookPage = () => {
                         name="message"
                         id="message"
                         placeholder="Feel free to share any additional comments or questions."
-                        className="w-full h-[115px] 2xl:h-[130px] p-4 bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-none"
+                        className="w-full h-[115px] 2xl:h-[130px] p-4 bg-[#F4F5F6] px-4 rounded-[8px] text-black text-[14px] focus:outline-hidden"
                       ></textarea>
                     </div>
                   </div>

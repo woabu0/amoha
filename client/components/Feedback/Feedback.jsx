@@ -47,13 +47,13 @@ export const Feedback = () => {
         >
           {feedback.map((f) => (
             <SwiperSlide className="w-full m-auto">
-              <div className="flex flex-col justify-between w-auto h-[410px] lg:w-[407px] lg:h-[527px] bg-[#fff] rounded-[20px] p-5 lg:p-10">
+              <div className="flex flex-col justify-between w-auto h-[410px] lg:w-[407px] lg:h-[527px] bg-white rounded-[20px] p-5 lg:p-10">
                 <motion.div
                   initial={{ y: -50, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.2, ease: "linear", duration: 0.5 }}
                 >
-                  <h1 className="text-[14px] lg:text-[16px] text-[#000] s">
+                  <h1 className="text-[14px] lg:text-[16px] text-black s">
                     {f.feedback}
                   </h1>
                 </motion.div>
@@ -75,7 +75,7 @@ export const Feedback = () => {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ delay: 0.6, ease: "linear", duration: 0.5 }}
                   >
-                    <h2 className="text-[11px] lg:text-[13px] text-[#000] b">
+                    <h2 className="text-[11px] lg:text-[13px] text-black b">
                       {f.name}
                     </h2>
                     <h3 className="text-[#C2C2C2] text-[10px] lg:text-[12px] r">

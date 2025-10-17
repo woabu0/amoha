@@ -100,7 +100,7 @@ export const Contact = () => {
               name="user_name"
               required
               placeholder="Enter your name"
-              className="w-full lg:w-[350px] h-[48px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-none"
+              className="w-full lg:w-[350px] h-[48px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-hidden"
             />
             <label className="text-[12px] b">Profession</label>
             <input
@@ -109,7 +109,7 @@ export const Contact = () => {
               name="user_profession"
               required
               placeholder="Enter your profession"
-              className="w-full lg:w-[350px] h-[48px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-none"
+              className="w-full lg:w-[350px] h-[48px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-hidden"
             />
             <label className="text-[12px] b">
               Organization/Company/Workplace
@@ -120,7 +120,7 @@ export const Contact = () => {
               name="user_company"
               required
               placeholder="Enter your Organization/Company/Workplace"
-              className="w-full lg:w-[350px] h-[48px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-none"
+              className="w-full lg:w-[350px] h-[48px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-hidden"
             />
             <label className="text-[12px] b">Email</label>
             <input
@@ -129,7 +129,7 @@ export const Contact = () => {
               name="user_email"
               required
               placeholder="Enter your email"
-              className="w-full lg:w-[350px] h-[48px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-none"
+              className="w-full lg:w-[350px] h-[48px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-hidden"
             />
             <div className="flex items-center justify-between w-full lg:w-[350px] ">
               <div className="flex flex-col w-[28%]">
@@ -140,7 +140,7 @@ export const Contact = () => {
                   name="user_city"
                   required
                   placeholder="Your city"
-                  className="h-[48px] mt-[15px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-none"
+                  className="h-[48px] mt-[15px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-hidden"
                 />
               </div>
               <div className="flex flex-col w-[28%]">
@@ -151,7 +151,7 @@ export const Contact = () => {
                   name="user_state"
                   required
                   placeholder="Your state"
-                  className="h-[48px] mt-[15px] bg-[#F4F5F6] px-3 md:px-[15px] rounded-[8px] focus:outline-none"
+                  className="h-[48px] mt-[15px] bg-[#F4F5F6] px-3 md:px-[15px] rounded-[8px] focus:outline-hidden"
                 />
               </div>
               <div className="flex flex-col w-[38%]">
@@ -162,7 +162,7 @@ export const Contact = () => {
                   name="user_country"
                   required
                   placeholder="Your country"
-                  className="h-[48px] mt-[15px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-none"
+                  className="h-[48px] mt-[15px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-hidden"
                 />
               </div>
             </div>
@@ -171,7 +171,7 @@ export const Contact = () => {
               name="message"
               id="message"
               required
-              className="w-full text-black lg:w-[350px] h-[120px] bg-[#F4F5F6] px-[15px] rounded-[8px] p-3 focus:outline-none"
+              className="w-full text-black lg:w-[350px] h-[120px] bg-[#F4F5F6] px-[15px] rounded-[8px] p-3 focus:outline-hidden"
               placeholder="Your message"
             />
             <input

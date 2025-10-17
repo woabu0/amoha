@@ -25,7 +25,7 @@ export const Login = () => {
             <div className="text-[8px] flex items-center gap-2 lg:gap-[20px] lg:text-[18px] xl:pr-5 m">
               <Link
                 to="/demopage"
-                className="cursor-pointer w-[73px] h-[24px] lg:w-[180px] lg:h-[45px] border-[#FAFAFA] border-[1px] rounded-[8px] flex items-center justify-center hover:bg-[#FAFAFA] hover:text-[#0049FF] transition-all"
+                className="cursor-pointer w-[73px] h-[24px] lg:w-[180px] lg:h-[45px] border-[#FAFAFA] border rounded-[8px] flex items-center justify-center hover:bg-[#FAFAFA] hover:text-[#0049FF] transition-all"
               >
                 Book a Demo
               </Link>

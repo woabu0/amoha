@@ -9,6 +9,7 @@ Welcome to the amoha project! This README provides an overview of the project, s
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Contributors](#contributors)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -23,12 +24,9 @@ amoha is an AI website to scan eyes that can detect Diabetic Retinopathy, Macula
 ## Features
 
 - Eye Scan
-- Navbar
-- Hero Section
-- Conditions
-- Diseases
+- Hero
+- Disease
 - Train
-- Demo Booking
 - Contact
 
 ## Installation
@@ -56,6 +54,14 @@ amoha is an AI website to scan eyes that can detect Diabetic Retinopathy, Macula
    ```
    http://localhost:5173
    ```
+
+## Contributors
+
+<p align="center">
+  <a href="https://github.com/woabu0/amoha/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=woabu0/amoha" alt="Contributors" />
+  </a>
+</p>
 
 ## Contributing
 

@@ -17,7 +17,7 @@ export const Footer = () => {
         </div>
         <div className="mt-20 w-full">
           <motion.div
-            className="h-[1px] w-full bg-white m-auto"
+            className="h-px w-full bg-white m-auto"
             initial={{ width: 0 }}
             whileInView={{ width: "100%" }}
             transition={{ delay: 0.3, ease: "linear", duration: 0.8 }}

@@ -15,7 +15,7 @@ export const LoginPage = () => {
       <div className="w-full px-9 bg-black">
         <div className="w-full pt-5 2xl:w-[1366px] m-auto">
           <motion.div
-            className="h-[1px] w-full bg-white m-auto"
+            className="h-px w-full bg-white m-auto"
             initial={{ width: 0 }}
             whileInView={{ width: "100%" }}
             transition={{ delay: 0.3, ease: "linear", duration: 0.8 }}
