@@ -1,5 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
+import FlowingMenu from "../animations/FlowingMenu";
+
+const demoItems = [
+  { link: '#', text: 'Normal', image: 'https://picsum.photos/600/400?random=1' },
+  { link: '#', text: 'Diabetic Retinopathy', image: 'https://picsum.photos/600/400?random=1' },
+  { link: '#', text: 'Macular Edema', image: 'https://picsum.photos/600/400?random=2' },
+  { link: '#', text: 'Age-Related Macular', image: 'https://picsum.photos/600/400?random=3' },
+  { link: '#', text: 'Glaucoma', image: 'https://picsum.photos/600/400?random=4' },
+  { link: '#', text: 'Cataract', image: 'https://picsum.photos/600/400?random=4' }
+];
 
 const diseases = [
   {
@@ -41,47 +51,52 @@ const diseases = [
 
 export const Disease = () => {
   return (
-    <div id="disease" className="mt-[70px] px-[10px] lg:px-9">
-      <div className="m-auto 2xl:w-[1366px]">
+    <section id="disease" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-7xl mx-auto">
         <motion.div
-          className="mt-[50px] lg:mt-[100px]"
+          className="mb-12"
           initial={{ y: -30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "linear", duration: 0.5 }}
         >
-          <h1 className="text-[24px] lg:text-[48px] text-[#23262F] text-center b md:w-[60%] m-auto">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-gray-900 text-center font-bold max-w-4xl mx-auto">
             Ever imagined the world through the lens of these conditions?
           </h1>
         </motion.div>
-        <div className="mt-[100px]">
+        <FlowingMenu items={demoItems} />
+        <div className="mt-16 sm:mt-20 lg:mt-24 space-y-16 sm:space-y-20">
           {diseases.map((d) => (
             <div
-              className="flex flex-col-reverse gap-5 md:flex-row items-center justify-between w-auto m-auto text-[#101010]"
-              id={d.id}
+              key={d.id}
+              className="flex flex-col-reverse gap-8 lg:flex-row items-center justify-between"
             >
               <motion.div
-                className="w-full md:w-1/2"
+                className="w-full lg:w-1/2"
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ ease: "linear", duration: 0.5, delay: 0.1 }}
               >
-                <iframe
-                  className="mb-5 rounded-[16px] w-full h-[275px] lg:h-[375px]"
-                  src={d.video}
-                  title="@AmohaAI"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
+                <div className="rounded-2xl overflow-hidden shadow-xl">
+                  <iframe
+                    className="w-full h-[275px] sm:h-[350px] lg:h-[400px]"
+                    src={d.video}
+                    title={d.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </motion.div>
               <motion.div
-                className="md:w-1/2"
+                className="w-full lg:w-1/2 lg:pl-8"
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ ease: "linear", duration: 0.5, delay: 0.3 }}
               >
-                <h1 className="text-[35px] lg:text-[40px] b">{d.title}</h1>
-                <p className="mt-[25px] text-[14px] lg:text-[18px] m">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                  {d.title}
+                </h2>
+                <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed">
                   {d.detail}
                 </p>
               </motion.div>
@@ -89,6 +104,6 @@ export const Disease = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

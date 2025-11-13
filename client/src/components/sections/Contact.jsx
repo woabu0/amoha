@@ -5,15 +5,15 @@ import { faBuilding } from "@fortawesome/free-solid-svg-icons";
 
 export const Contact = () => {
   return (
-    <div id="contact" className="w-auto mt-[70px] xl:w-[1000px] m-auto px-9">
-      <div>
+    <section id="contact" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+      <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center"
           initial={{ y: -30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "linear", duration: 0.5 }}
         >
-          <h1 className="text-[24px] lg:text-[48px] text-[#23262F] b">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900">
             Connect with us
           </h1>
         </motion.div>
@@ -23,161 +23,228 @@ export const Contact = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "linear", duration: 0.5 }}
         >
-          <p className="text-[12px] lg:text-[16px] text-[#777E90] r">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 mt-4">
             No need to knock – just drop your thoughts in our inbox for a
             caffeine-free chat.
           </p>
         </motion.div>
-        <div className="r mt-[70px] lg:mt-[110px] lg:items-center xl:items-start flex flex-col gap-[25px] justify-between xl:flex-row">
+        <div className="mt-12 sm:mt-16 lg:mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          {/* Contact Information */}
           <motion.div
-            className="flex flex-col gap-[25px] xl:gap-[55px]"
-            initial={{ y: -30, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+            className="space-y-8"
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2, ease: "linear", duration: 0.5 }}
           >
-            <div className="flex flex-col lg:items-center xl:items-start gap-[10px] text-[14px] text-[#23262F] ">
-              <FontAwesomeIcon
-                icon={faBuilding}
-                className="text-[#777E90] w-[24px] h-[24px]"
-              />
-              <h6 className="text-[#777E90]">Address</h6>
-              <h6>New Delhi, India</h6>
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
+                Get in Touch
+              </h2>
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                Have questions or want to learn more? We'd love to hear from you. 
+                Send us a message and we'll respond as soon as possible.
+              </p>
             </div>
-            <div className="flex flex-col lg:items-center xl:items-start gap-[10px] text-[14px] text-[#23262F]">
-              <img
-                src="img/icon2.png"
-                alt="icon"
-                className="w-[24px] h-[24px]"
-              />
-              <h6 className="text-[#777E90]">Email</h6>
-              <h6>inquiries@amoha.ai</h6>
+            
+            <div className="space-y-6">
+              <div className="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FontAwesomeIcon
+                    icon={faBuilding}
+                    className="text-indigo-600 w-5 h-5"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">
+                    Address
+                  </h3>
+                  <p className="text-gray-900 font-medium">New Delhi, India</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">
+                    Email
+                  </h3>
+                  <a href="mailto:inquiries@amoha.ai" className="text-indigo-600 font-medium hover:text-indigo-700 transition-colors">
+                    inquiries@amoha.ai
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            {/* Social Links */}
+            <div className="pt-6">
+              <h3 className="text-sm font-semibold text-gray-700 mb-4">Follow Us</h3>
+              <div className="flex gap-4">
+                <a
+                  href="https://www.linkedin.com/company/amoha-ai/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm hover:shadow-md hover:scale-110 transition-all"
+                >
+                  <img
+                    src="img/linkedin.svg"
+                    alt="LinkedIn"
+                    className="w-6 h-6"
+                  />
+                </a>
+                <a
+                  href="https://twitter.com/AmohaAi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm hover:shadow-md hover:scale-110 transition-all"
+                >
+                  <img
+                    src="img/twitter.svg"
+                    alt="Twitter"
+                    className="w-6 h-6"
+                  />
+                </a>
+              </div>
             </div>
           </motion.div>
 
-          <motion.form
-            initial={{ y: -30, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+          {/* Contact Form */}
+          <motion.div
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.4, ease: "linear", duration: 0.5 }}
-            className="text-[#777E90] text-[14px] flex flex-col gap-[15px]"
+            className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl"
           >
-            <label className="text-[12px] b">Full Name</label>
-            <input
-              type="text"
-              id="name"
-              name="user_name"
-              required
-              placeholder="Enter your name"
-              className="w-full lg:w-[350px] h-[48px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-hidden"
-            />
-            <label className="text-[12px] b">Profession</label>
-            <input
-              type="text"
-              id="profession"
-              name="user_profession"
-              required
-              placeholder="Enter your profession"
-              className="w-full lg:w-[350px] h-[48px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-hidden"
-            />
-            <label className="text-[12px] b">
-              Organization/Company/Workplace
-            </label>
-            <input
-              type="text"
-              id="company"
-              name="user_company"
-              required
-              placeholder="Enter your Organization/Company/Workplace"
-              className="w-full lg:w-[350px] h-[48px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-hidden"
-            />
-            <label className="text-[12px] b">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="user_email"
-              required
-              placeholder="Enter your email"
-              className="w-full lg:w-[350px] h-[48px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-hidden"
-            />
-            <div className="flex items-center justify-between w-full lg:w-[350px] ">
-              <div className="flex flex-col w-[28%]">
-                <label className="text-[12px] b">City</label>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+              Send us a Message
+            </h2>
+            <form className="space-y-5">
+              <div>
+                <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                  Full Name
+                </label>
                 <input
                   type="text"
-                  id="city"
-                  name="user_city"
+                  id="name"
+                  name="user_name"
                   required
-                  placeholder="Your city"
-                  className="h-[48px] mt-[15px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-hidden"
+                  placeholder="John Doe"
+                  className="w-full h-12 bg-gray-50 border border-gray-200 px-4 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all"
                 />
               </div>
-              <div className="flex flex-col w-[28%]">
-                <label className="text-[12px] b">State/Province</label>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="user_email"
+                    required
+                    placeholder="john@example.com"
+                    className="w-full h-12 bg-gray-50 border border-gray-200 px-4 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="profession" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Profession
+                  </label>
+                  <input
+                    type="text"
+                    id="profession"
+                    name="user_profession"
+                    required
+                    placeholder="Doctor"
+                    className="w-full h-12 bg-gray-50 border border-gray-200 px-4 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
+                  Organization/Company
+                </label>
                 <input
                   type="text"
-                  id="state"
-                  name="user_state"
+                  id="company"
+                  name="user_company"
                   required
-                  placeholder="Your state"
-                  className="h-[48px] mt-[15px] bg-[#F4F5F6] px-3 md:px-[15px] rounded-[8px] focus:outline-hidden"
+                  placeholder="Your organization name"
+                  className="w-full h-12 bg-gray-50 border border-gray-200 px-4 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all"
                 />
               </div>
-              <div className="flex flex-col w-[38%]">
-                <label className="text-[12px] b">Country</label>
-                <input
-                  type="text"
-                  id="country"
-                  name="user_country"
+              
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label htmlFor="city" className="block text-sm font-semibold text-gray-700 mb-2">
+                    City
+                  </label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="user_city"
+                    required
+                    placeholder="City"
+                    className="w-full h-12 bg-gray-50 border border-gray-200 px-4 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="state" className="block text-sm font-semibold text-gray-700 mb-2">
+                    State
+                  </label>
+                  <input
+                    type="text"
+                    id="state"
+                    name="user_state"
+                    required
+                    placeholder="State"
+                    className="w-full h-12 bg-gray-50 border border-gray-200 px-4 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="country" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Country
+                  </label>
+                  <input
+                    type="text"
+                    id="country"
+                    name="user_country"
+                    required
+                    placeholder="Country"
+                    className="w-full h-12 bg-gray-50 border border-gray-200 px-4 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  id="message"
                   required
-                  placeholder="Your country"
-                  className="h-[48px] mt-[15px] bg-[#F4F5F6] px-[15px] rounded-[8px] focus:outline-hidden"
+                  rows={5}
+                  className="w-full bg-gray-50 border border-gray-200 px-4 py-3 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all resize-none"
+                  placeholder="Tell us how we can help..."
                 />
               </div>
-            </div>
-            <label className="text-[12px] b">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              required
-              className="w-full text-black lg:w-[350px] h-[120px] bg-[#F4F5F6] px-[15px] rounded-[8px] p-3 focus:outline-hidden"
-              placeholder="Your message"
-            />
-            <input
-              type="submit"
-              value="Send"
-              className="b bg-[#3772FF] text-[16px] w-[88px] h-[48px] text-[#FCFCFD] rounded-[90px] cursor-pointer hover:scale-110 transition-all"
-            />
-          </motion.form>
+              
+              <button
+                type="submit"
+                className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl"
+              >
+                Send Message
+              </button>
+            </form>
+          </motion.div>
         </div>
-        <motion.h1
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: "linear", duration: 0.3 }}
-          className="text-[#777E90] mb-2 text-[16px] mt-5 md:mt-0 r"
-        >
-          Follow us :
-        </motion.h1>
-        <motion.div
-          className="flex gap-5 my-[25px] xl:my-0 lg:justify-center xl:place-content-start"
-          initial={{ y: -15, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.4, ease: "linear", duration: 0.5 }}
-        >
-          <a href="https://www.linkedin.com/company/amoha-ai/" target="_blank">
-            <img
-              src="img/linkedin.svg"
-              alt="socialIcon"
-              className="w-[20px] h-[20px] cursor-pointer"
-            />
-          </a>
-          <a href="https://twitter.com/AmohaAi" target="_blank">
-            <img
-              src="img/twitter.svg"
-              alt="socialIcon"
-              className="w-[20px] h-[20px] cursor-pointer"
-            />
-          </a>
-        </motion.div>
       </div>
-    </div>
+    </section>
   );
 };

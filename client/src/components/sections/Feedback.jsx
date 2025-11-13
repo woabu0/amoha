@@ -9,125 +9,135 @@ const feedbacks = [
   {
     profile: "img/profile1.png",
     feedback:
-      "“Amoha.ai is the trailblazing revolution eye care has been waiting for, allowing ophthalmologists to screen and identify eye problems using artificial intelligence and with not just accuracy but also through remote locations using portable diagnostics. This will help catch many illnesses in their early stages, improve visual outcomes, and be a boon in our country, where there is a dearth of healthcare delivery systems in the interior.”",
-    name: "Dr. (Major) Prashant Kumar Singh Chauhan",
-    country: "Indian Army Veteran & Founder, Purple Squirrel Strategist",
+      "Amoha.ai is revolutionizing eye care with AI-powered screening that enables remote diagnostics and early detection of eye conditions.",
+    name: "Dr. (Major) Prashant Kumar Singh",
+    country: "Indian Army Veteran & Founder",
   },
   {
     profile: "img/profile3.png",
     feedback:
-      "“I've had the opportunity to review Amoha.ai, and I am genuinely impressed with the platform's capabilities. The accuracy in predicting diabetic retinopathy & macular edema is promising, and the user interface is intuitive, making it user-friendly for ophthalmologists. Amoha.ai has the potential to significantly impact the field of ophthalmology, not only in predicting DR and macular edema but also in its future applications. The initiative's commitment to affordability and accessibility is commendable, and I believe it could indeed revolutionize eye healthcare.”",
+      "I'm impressed with Amoha.ai's accuracy in predicting diabetic retinopathy and macular edema. The platform has great potential to transform ophthalmology.",
     name: "Dr. Blessy Jacob",
     country: "Ophthalmologist",
   },
   {
     profile: "img/profile2.png",
     feedback:
-      "“Having reviewed Amoha.ai, I am pleased to express my endorsement for this groundbreaking initiative. The accuracy in predicting diabetic retinopathy & macular edema is promising, and the user interface is impressive. I see immense potential for Amoha.ai to expand beyond a few ocular conditions. Exploring collaborations with eye hospitals and incorporating feedback from experienced specialists will be crucial for the platform's growth. I envision Amoha.ai as a transformative force in predictive eye healthcare.”",
-    name: "Mr. Braj Bhushan Bijoria,",
+      "Amoha.ai shows promising accuracy and an impressive interface. I see immense potential for this platform to expand and transform predictive eye healthcare.",
+    name: "Mr. Braj Bhushan Bijoria",
     country: "Co-founder, Purple Squirrel Strategist",
   },
 ];
 
 export const Feedback = () => {
   return (
-    <div id="feedback" className="mt-24">
-      <motion.div
-        initial={{ y: -50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ ease: "linear", duration: 0.5 }}
-      >
-        <h1 className="text-2xl lg:text-5xl text-center font-semibold">
-          What do the SME's have to say about us?
-        </h1>
-      </motion.div>
-      <div className="m-auto">
-        <Swiper
-          className="px-10 mt-10"
-          modules={[Autoplay, Navigation]}
-          navigation={{
-            nextEl: ".next",
-            prevEl: ".prev",
-          }}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
-          spaceBetween={50}
-          slidesPerView={3}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-          loop={true}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 3,
-            },
-          }}
+    <section id="feedback" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ ease: "linear", duration: 0.5 }}
+          className="text-center mb-12"
         >
-          {feedbacks.map((f) => (
-            <SwiperSlide className="w-full m-auto">
-              <div className="flex flex-col justify-between w-full bg-white rounded-2xl p-10">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900">
+            What do the experts say about us?
+          </h1>
+        </motion.div>
+        <div className="relative">
+          <Swiper
+            className="!pb-12"
+            modules={[Autoplay, Navigation]}
+            navigation={{
+              nextEl: ".next",
+              prevEl: ".prev",
+            }}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            spaceBetween={30}
+            slidesPerView={1}
+            loop={true}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            }}
+          >
+            {feedbacks.map((f, index) => (
+              <SwiperSlide key={index}>
                 <motion.div
-                  initial={{ y: -50, opacity: 0 }}
+                  initial={{ y: 50, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.2, ease: "linear", duration: 0.5 }}
+                  transition={{ delay: index * 0.1, ease: "linear", duration: 0.5 }}
+                  className="h-full"
                 >
-                  <h1 className="text-[14px] lg:text-[16px] text-black s">
-                    {f.feedback}
-                  </h1>
+                  <div className="flex flex-col h-full bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    {/* Profile Image at Top */}
+                    <div className="flex justify-center mb-6">
+                      <div className="relative">
+                        <img
+                          src={f.profile}
+                          alt={f.name}
+                          className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-indigo-100 shadow-md"
+                        />
+                        <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full border-2 border-white"></div>
+                      </div>
+                    </div>
+                    
+                    {/* Feedback Text */}
+                    <div className="flex-grow mb-6">
+                      <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-center italic">
+                        "{f.feedback}"
+                      </p>
+                    </div>
+                    
+                    {/* Name and Country */}
+                    <div className="text-center border-t border-gray-200 pt-6">
+                      <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+                        {f.name}
+                      </h3>
+                      <p className="text-sm sm:text-base text-gray-600">
+                        {f.country}
+                      </p>
+                    </div>
+                  </div>
                 </motion.div>
-                <div className="flex items-center gap-4">
-                  <motion.div
-                    initial={{ x: 50, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ ease: "linear", duration: 0.5 }}
-                  >
-                    <img
-                      src={f.profile}
-                      alt="profileImg"
-                      className="w-[38px] lg:w-[59px]"
-                    />
-                  </motion.div>
-                  <motion.div
-                    className="flex flex-col justify-between"
-                    initial={{ x: -10, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.6, ease: "linear", duration: 0.5 }}
-                  >
-                    <h2 className="text-[11px] lg:text-[13px] text-black b">
-                      {f.name}
-                    </h2>
-                    <h3 className="text-[#C2C2C2] text-[10px] lg:text-[12px] r">
-                      {f.country}
-                    </h3>
-                  </motion.div>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          
+          {/* Navigation Arrows */}
+          <div className="flex items-center justify-center gap-6 mt-8">
+            <button className="prev cursor-pointer p-3 rounded-full bg-white shadow-lg hover:bg-gray-50 transition-colors">
+              <svg
+                className="w-6 h-6 text-gray-700"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button className="next cursor-pointer p-3 rounded-full bg-white shadow-lg hover:bg-gray-50 transition-colors">
+              <svg
+                className="w-6 h-6 text-gray-700"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
-      <motion.div
-        className="flex items-center gap-[26px] justify-center mt-[38px]"
-        initial={{ y: 30, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.2, ease: "linear", duration: 0.5 }}
-      >
-        <img
-          src="img/arrow.png"
-          alt="arrowImage"
-          className="-rotate-180 w-[24px] h-[24px] prev cursor-pointer"
-        />
-        <img
-          src="img/arrow.png"
-          alt="arrowImage"
-          className="w-[24px] h-[24px] next cursor-pointer"
-        />
-      </motion.div>
-    </div>
+    </section>
   );
 };
